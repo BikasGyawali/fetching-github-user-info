@@ -1,0 +1,253 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body{
+    font-family: 'Segoe UI';
+    background-color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.header{
+    padding-top: 10%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.4rem;
+    color: black;
+}
+
+
+
+.searchbox{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI';
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;   
+}
+
+.searchbox img{
+    height:30px;
+    width:30px;
+    opacity: .7;
+    justify-content: center;
+    align-items: center;
+    margin-right: 3px;
+    margin-top: 3px;
+}
+.searchbox input{
+    text-align: center;
+    justify-content: center;
+    border: 4em;
+    opacity: 70%;
+    font-size: 18px;
+    border-radius: 6px;
+    height:40px;
+    width:50%;
+}
+
+.searchbox button{
+    box-shadow: 0px 8px 15px rgba(142, 124, 124, 0.1);
+    
+    outline: none;
+    text-align: center;
+    font-weight: 500;
+    color: black;
+    cursor:pointer;
+    border-radius: 5px;
+    margin-left: 5px;
+    height: 40px;
+    width:60px
+}
+
+.resultbody{
+    margin:auto;
+    padding-top: 25px;
+    background-color: aliceblue;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;
+   
+}
+.main-img{
+   
+    width:117px;
+    height:117px;
+    border-radius: 117px;
+    border:1px solid black;   
+}
+
+.userinfo{
+    padding: 0 20 0 40;
+    display: grid;
+    
+}
+
+.resultbody .bio{
+   padding: 0 60px 0 40;
+    display: flex;
+    flex-direction: column;
+}
+
+.following-followers-repo{
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  
+}
+
+.followingtotal,.followerstotal,.repototal{
+    padding: 5px 0 5 0;
+}
+
+.infos{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+}
+.twit{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.twit img{
+    cursor:pointer;
+    height:20px;
+    width:20px;
+}
+
+.locations{
+    padding-right: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+}
+.locations img{
+    cursor:pointer;
+    height:20px;
+    width:20px;
+}
+     .company{
+        padding-right: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .company img{
+        cursor:pointer;
+        height:20px;
+        width:20px;
+    }    
+
+    .blog{
+        
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+    }
+    .blog img{
+        cursor:pointer;
+        height:20px;
+        width:20px;
+    }
+.twit p{
+    padding-left: 5px;
+}
+.blog p{
+    padding-left: 5px;
+}
+.company p{
+    padding-left: 5px;
+}
+.locations p{
+    padding-left: 5px;
+}
+
+@media  only screen and (max-width:760px)
+{
+    .resultbody{
+        margin:auto;
+        padding-top: 25px;
+        background-color: aliceblue;
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        justify-items: center;
+     
+    }
+     .main-img{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        margin-bottom:10px;
+         
+    }
+    .searchbox img{
+        height:20px;
+        width:20px;
+        padding-top:3px;
+        padding-left: 5px;
+    }    
+    .searchbox input{
+        text-align: center;
+        justify-content: center;
+        border: 4em;
+        opacity: 70%;
+        font-size: 14px;
+        border-radius: 6px;
+    }
+    .searchbox button{
+        height: 35px;
+        width: 55px;
+    }
+    .userinfo{ 
+            padding-bottom: 10px;
+    }
+    .bio{
+        margin-bottom: 20px;
+    }
+    .gituser{
+        padding-bottom: 20px;
+    }
+    .username{
+        padding-bottom: 20px;
+    }
+    .joineddate{
+        padding-bottom: 10px;
+    }
+    .infos{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+    }
+    .locations{ padding-bottom: 20px;}
+    .twit{padding-bottom: 20px;}
+    .company{padding-bottom: 20px;}
+    .blog{padding-bottom: 90px;}
+}
